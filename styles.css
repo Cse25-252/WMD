@@ -1,107 +1,83 @@
-/* General Page Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header */
-header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* Navigation */
+/* Navigation Bar */
 nav {
-    background-color: #444;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    background-color: #1c1c1c;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-    color: white;
+    color: orange;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 18px;
 }
 
 nav a:hover {
-    color: orange;
+    color: yellow;
 }
 
-/* Sections */
-section {
-    padding: 50px 20px;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ff8c00, #222);
+    color: white;
+    padding: 80px 20px;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2em;
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-section p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.1em;
-}
-
-/* Buttons */
+/* Button */
 .btn {
-    display: inline-block;
+    background-color: yellow;
+    color: black;
     padding: 12px 25px;
-    background-color: orange;
-    color: white;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    margin-top: 15px;
-    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: darkorange;
+    background-color: orange;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #222;
+    background-color: #1c1c1c;
     color: white;
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 50px;
-}
-
-/* Responsive for mobile */
-@media(max-width: 600px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    
-    section h2 {
-        font-size: 1.5em;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
+    padding: 20px;
 }
