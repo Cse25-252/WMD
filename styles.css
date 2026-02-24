@@ -1,43 +1,107 @@
-/* Body */
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 20px;
+    line-height: 1.6;
 }
 
 /* Header */
-h1 {
-    color: #222;
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-h2 {
-    color: #555;
-    text-align: center;
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Paragraph */
-p {
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
+section p {
+    max-width: 700px;
+    margin: auto;
     font-size: 1.1em;
 }
 
-/* Button / Link */
-a {
+/* Buttons */
+.btn {
     display: inline-block;
+    padding: 12px 25px;
     background-color: orange;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
 }
 
-a:hover {
+.btn:hover {
     background-color: darkorange;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+/* Responsive for mobile */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
