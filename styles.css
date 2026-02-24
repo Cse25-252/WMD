@@ -1,1 +1,43 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
 
+/* Header */
+h1 {
+    color: #222;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+/* Paragraph */
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Button / Link */
+a {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: darkorange;
+}
